@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "dev": "npm run bundle -- --watch",
+    "bundle": "esbuild ./src/main.ts --bundle --outfile=dist/main.js"
+  },
+  "dependencies": {
+    "esbuild": "^0.17.19"
+  }
+}

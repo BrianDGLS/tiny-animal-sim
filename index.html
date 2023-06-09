@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiny Animal Sim</title>
+    <style>
+      body {
+        margin: 0;
+        min-width: 100vw;
+        min-height: 100vh;
+        background: linear-gradient(rgb(66, 66, 253), rgb(63, 63, 224));
+      }
+
+      .sprites {
+        display: none;
+      }
+
+      .title-container {
+        color: white;
+        text-align: center;
+      }
+
+      .stage-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .stage {
+        margin: 0 auto;
+        position: relative;
+        border-radius: 3px;
+        border: 1rem solid rgb(63, 63, 172);
+      }
+
+      .stage canvas {
+        position: absolute;
+      }
+
+      #background {
+        background: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sprites">
+      <img src="./sprites/animals.png" alt="" id="animals" />
+      <img src="./sprites/tiles.png" alt="" id="tiles" />
+    </div>
+    <div class="title-container">
+      <h1 class="title">Tiny Animal Sim</h1>
+    </div>
+    <div class="stage-container">
+      <div class="stage">
+        <canvas id="background"></canvas>
+        <canvas id="foreground"></canvas>
+      </div>
+    </div>
+    <script src="./dist/main.js"></script>
+  </body>
+</html>
